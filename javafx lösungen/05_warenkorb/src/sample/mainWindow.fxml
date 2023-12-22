@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <Hyperlink fx:id="showCartHyperlink" layoutX="270.0" layoutY="22.0" onAction="#onHyperlinkShowCartClick" text="Warenkorb anzeigen" />
+      <ImageView fitHeight="29.0" fitWidth="22.0" layoutX="242.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cart.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="amountCountLabel" layoutX="222.0" layoutY="25.0" text="(0)" />
+      <Label layoutX="38.0" layoutY="93.0" text="Produkt:" />
+      <Label layoutX="45.0" layoutY="140.0" text="Anzahl:" />
+      <TextField fx:id="productNameTextField" layoutX="130.0" layoutY="88.0" prefHeight="31.0" prefWidth="288.0" />
+      <TextField fx:id="amountTextField" layoutX="130.0" layoutY="135.0" prefHeight="31.0" prefWidth="56.0" />
+      <Button layoutX="130.0" layoutY="183.0" mnemonicParsing="false" onAction="#onButtonAddToCartClick" text="Zum Warenkorb hinzufügen" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="230.0" minWidth="300.0" prefHeight="245.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="samples.javafx.Controller">
+   <children>
+      <Separator layoutX="24.0" layoutY="92.0" prefHeight="4.0" prefWidth="266.0" />
+      <Label layoutX="11.0" layoutY="14.0" style="-fx-font-weight: bold;" text="FIFO Puffer testen" />
+      <Label layoutX="25.0" layoutY="58.0" text="Puffergrösse" />
+      <Spinner fx:id="spinnerCapacity" initialValue="3" layoutX="122.0" layoutY="54.0" max="50" min="1" prefHeight="25.0" prefWidth="57.0" />
+      <Button layoutX="208.0" layoutY="55.0" mnemonicParsing="false" onAction="#onCreateButtonClick" prefHeight="25.0" prefWidth="120.0" text="Puffer erstellen" />
+      <Label layoutX="24.0" layoutY="109.0" text="Eingabe" />
+      <TextField fx:id="textFieldPut" alignment="CENTER" layoutX="101.0" layoutY="105.0" prefHeight="25.0" prefWidth="78.0" />
+      <Button layoutX="208.0" layoutY="106.0" mnemonicParsing="false" onAction="#onPutClick" prefHeight="25.0" prefWidth="120.0" text="Put" />
+      <Button layoutX="25.0" layoutY="160.0" mnemonicParsing="false" onAction="#onGetClick" prefHeight="25.0" prefWidth="78.0" text="Get" />
+      <Button layoutX="25.0" layoutY="194.0" mnemonicParsing="false" onAction="#onGetAllClick" prefHeight="25.0" prefWidth="78.0" text="GetAll" />
+      <TextField fx:id="textFieldGet" alignment="CENTER" layoutX="208.0" layoutY="172.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label layoutX="116.0" layoutY="177.0" text="Ausgabe" />
+      <Separator layoutX="24.0" layoutY="144.0" prefHeight="4.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
