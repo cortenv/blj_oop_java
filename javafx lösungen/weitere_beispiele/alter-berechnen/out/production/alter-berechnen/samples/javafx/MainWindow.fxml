@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="samples.javafx.Controller">
+   <children>
+      <Rectangle fill="TRANSPARENT" height="70.0" layoutX="9.0" layoutY="13.0" stroke="#dddddd" strokeType="INSIDE" width="414.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+      <Label layoutX="18.0" layoutY="2.0" style="-fx-background-color: #fff;" text="Einheit" />
+      <RadioButton fx:id="rbYears" layoutX="37.0" layoutY="41.0" mnemonicParsing="false" selected="true" text="Jahre" AnchorPane.leftAnchor="37.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="groupUnit" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbMonths" layoutX="127.0" layoutY="41.0" mnemonicParsing="false" text="Monate" toggleGroup="$groupUnit" />
+      <RadioButton fx:id="rbWeeks" layoutX="238.0" layoutY="41.0" mnemonicParsing="false" text="Wochen" toggleGroup="$groupUnit" />
+      <RadioButton fx:id="rbDays" layoutX="348.0" layoutY="41.0" mnemonicParsing="false" text="Tage" toggleGroup="$groupUnit" />
+      <Rectangle fill="TRANSPARENT" height="70.0" layoutX="9.0" layoutY="101.0" stroke="#dddddd" strokeType="INSIDE" width="414.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+      <Label layoutX="18.0" layoutY="90.0" style="-fx-background-color: #fff;" text="Eingabe" />
+      <Rectangle fill="TRANSPARENT" height="70.0" layoutX="9.0" layoutY="191.0" stroke="#dddddd" strokeType="INSIDE" width="414.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" />
+      <Label layoutX="18.0" layoutY="180.0" style="-fx-background-color: #fff;" text="Ausgabe" />
+      <Button defaultButton="true" layoutX="322.0" layoutY="121.0" mnemonicParsing="false" onAction="#onButtonCalculateClick" prefHeight="31.0" prefWidth="77.0" text="Berechnen" />
+      <Label layoutX="37.0" layoutY="126.0" text="Geburtsdatum" AnchorPane.leftAnchor="37.0" />
+      <Label layoutX="37.0" layoutY="216.0" text="Alter" AnchorPane.leftAnchor="37.0" />
+      <TextField fx:id="textFieldResult" alignment="CENTER" editable="false" layoutX="145.0" layoutY="211.0" prefHeight="31.0" prefWidth="168.0" AnchorPane.leftAnchor="145.0" />
+      <DatePicker fx:id="dtpBirthDate" layoutX="145.0" layoutY="121.0" prefHeight="31.0" prefWidth="168.0" AnchorPane.leftAnchor="145.0" />
+   </children>
+</AnchorPane>

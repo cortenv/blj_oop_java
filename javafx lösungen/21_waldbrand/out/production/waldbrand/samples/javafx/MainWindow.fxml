@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="samples.javafx.Controller">
+   <children>
+      <Label layoutX="16.0" layoutY="26.0" text="Parameter" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="16.0" layoutY="50.0" prefHeight="5.0" prefWidth="333.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="19.0" layoutY="68.0" text="Breite des Waldes" AnchorPane.leftAnchor="10.0" />
+      <Spinner fx:id="spinnerWidth" editable="true" layoutX="141.0" layoutY="64.0" max="100" min="5" prefHeight="31.0" prefWidth="74.0" />
+      <Label layoutX="19.0" layoutY="103.0" text="Tiefe des Waldes" AnchorPane.leftAnchor="10.0" />
+      <Spinner fx:id="spinnerDepth" editable="true" layoutX="141.0" layoutY="99.0" max="100" min="5" prefHeight="31.0" prefWidth="74.0" />
+      <Label layoutX="228.0" layoutY="68.0" text="Wachstum (Wahrscheinlichkeit in %)" />
+      <Label layoutX="228.0" layoutY="103.0" text="Entzündung (Wahrscheinlichkeit in %)" />
+      <Spinner fx:id="spinnerGrowth" editable="true" layoutX="481.0" layoutY="64.0" max="100" min="1" prefHeight="31.0" prefWidth="66.0" />
+      <Spinner fx:id="spinnerIgnition" editable="true" layoutX="481.0" layoutY="99.0" max="100" min="1" prefHeight="31.0" prefWidth="66.0" />
+      <Button fx:id="buttonStartSim" layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onAction="#onButtonStartClick" prefHeight="30.0" prefWidth="153.0" text="Simulation starten" AnchorPane.leftAnchor="14.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="16.0" layoutY="139.0" prefHeight="5.0" prefWidth="333.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="10.0" />
+      <TextArea fx:id="areaForest" editable="false" layoutX="14.0" layoutY="202.0" prefHeight="224.0" prefWidth="495.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="195.0">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font></TextArea>
+      <Button fx:id="buttonStopSim" layoutX="175.0" layoutY="153.0" mnemonicParsing="false" onAction="#onButtonCancelClick" prefHeight="30.0" prefWidth="153.0" text="Simulation beenden" AnchorPane.leftAnchor="175.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="62.0" layoutX="11.0" layoutY="19.0" stroke="#cccccc" strokeType="INSIDE" width="263.0" />
+      <Label layoutX="22.0" layoutY="11.0" style="-fx-background-color: #fff;" text="Temperatur-Sensor (Simulator)" />
+      <Slider fx:id="horizontalSlider" blockIncrement="1.0" layoutX="22.0" layoutY="38.0" max="50.0" prefHeight="14.0" prefWidth="242.0" />
+      <Label layoutX="25.0" layoutY="55.0" text="0" />
+      <Label layoutX="249.0" layoutY="55.0" text="50" />
+   </children>
+</AnchorPane>
